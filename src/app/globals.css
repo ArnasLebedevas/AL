@@ -2,20 +2,37 @@
 @import "tw-animate-css";
 
 @theme inline {
+  --font-primary: var(--font-jetbrains);
+
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 960px;
   --breakpoint-xl: 1200px;
-  --color-background: var(--background);
-  --font-primary: var(--font-jetbrains);
+
+  --color-accent: var(--accent);
+  --color-primary: var(--primary);
+  --text-primary: var(--primary);
 }
 
 :root {
-  --background: #1c1c22;
+  --primary: #1c1c22;
+  --accent: #4ade80;
 }
 
 @layer base {
   body {
-    @apply bg-background font-primary text-white;
+    @apply bg-primary font-primary text-white;
+  }
+
+  h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+
+  h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+
+  h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
 }
