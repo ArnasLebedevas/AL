@@ -1,20 +1,18 @@
 "use client";
 
+import { Experience } from "@/constants/experience";
 import CountUp from "react-countup";
 
-const stats = [
-  { label: "Years of experience", value: 5 },
-  { label: "Projects completed", value: 6 },
-  { label: "Technologies mastered", value: 10 },
-  { label: "Commits made", value: 500 },
-];
+interface Props {
+  data: Experience[];
+}
 
-export default function Statistics() {
+export default function Statistics({ data }: Props) {
   return (
     <section>
       <div className="container mx-auto">
         <div className="flex flex-wrap gap-6 mx-auto xl:max-w-none justify-between">
-          {stats.map((stat, index) => (
+          {data.map((stat, index) => (
             <div className="flex gap-4 items-center" key={index}>
               <CountUp
                 end={stat.value}

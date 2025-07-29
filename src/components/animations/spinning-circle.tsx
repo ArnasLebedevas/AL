@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { spinningStroke } from "./config/spin";
 
 export default function SpinningCircle() {
   return (
@@ -16,16 +17,7 @@ export default function SpinningCircle() {
         strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
-        initial={{ strokeDasharray: "24 10 0 0" }}
-        animate={{
-          strokeDasharray: ["15 120 25 25", "16 25 92 72", "15 120 25 25"],
-          rotate: 360,
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          ease: "linear",
-        }}
+        {...spinningStroke}
       />
     </motion.svg>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import { IconType } from "react-icons";
 import {
   SiDotnet,
   SiApollographql,
@@ -13,12 +14,12 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 
-interface Technology {
-  icon: React.ComponentType;
+export interface TechStack {
+  icon: IconType;
   name: string;
 }
 
-export const TECHNOLOGIES: Technology[] = [
+export const TECH_STACK: TechStack[] = [
   { icon: SiDotnet, name: "Dotnet" },
   { icon: SiApollographql, name: "Apollo GraphQL" },
   { icon: SiNextdotjs, name: "Next.js" },
