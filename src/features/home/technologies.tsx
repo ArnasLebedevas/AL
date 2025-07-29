@@ -1,4 +1,4 @@
-import InfiniteIconSlider from "@/components/animations/infinite-carousel";
+import InfiniteCarousel from "@/components/animations/infinite-carousel";
 import { TECH_STACK } from "@/constants/tech-stack";
 
 export default function Technologies() {
@@ -11,7 +11,7 @@ export default function Technologies() {
         I work with a modern, proven tech stack to build reliable, responsive,
         and beautiful applications for web and mobile
       </p>
-      <InfiniteIconSlider data={TECH_STACK} />
+      <InfiniteCarousel data={TECH_STACK} />
     </div>
   );
 }

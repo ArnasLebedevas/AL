@@ -2,21 +2,21 @@ import ProfileImage from "@/components/layout/profile-image";
 import { Button } from "@/components/ui/button";
 import { IoMdDownload } from "react-icons/io";
 import SocialLinks from "./social-links";
+import { content } from "@/constants/content";
 
 export default function Hero() {
+  const hero = content.home.hero;
+
   return (
     <div className="container mx-auto h-full">
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
         <div className="text-center xl:text-left order-2 xl:order-none">
-          <div className="mb-4">Software Developer</div>
+          <div className="mb-4">{hero.subtitle}</div>
           <h1 className="mb-4">
-            Hello I&apos;m <br />
-            <span className="text-accent">Arnas Lebedevas</span>
+            {hero.title.greeting} <br />
+            <span className="text-accent">{hero.title.name}</span>
           </h1>
-          <p className="max-w-[500px] text-white/80 mb-7">
-            I&apos;m a software developer with a passion for creating innovative
-            solutions.
-          </p>
+          <p className="max-w-[500px] text-white/80 mb-7">{hero.description}</p>
           <div className="flex flex-col xl:flex-row items-center gap-5">
             <Button
               variant="outline"

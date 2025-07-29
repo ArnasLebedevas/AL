@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "title": {
+      "greeting": "Hello I'm",
+      "name": "Arnas Lebedevas"
+    },
+    "subtitle": "Software Developer",
+    "description": "I'm a software developer with a passion for creating innovative solutions."
+  }
+}
