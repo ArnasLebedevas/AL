@@ -1,4 +1,4 @@
-export default function Resume() {
+export default function ResumePage() {
   return (
     <main>
       <h1>Resume Page</h1>

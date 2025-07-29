@@ -16,7 +16,7 @@
 
 :root {
   --primary: #1c1c22;
-  --accent: #4ade80;
+  --accent: #00ff99;
 }
 
 @layer base {
@@ -35,4 +35,8 @@
   h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
+}
+
+.container {
+  max-width: 1350px;
 }

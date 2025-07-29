@@ -1,6 +1,6 @@
 "use client";
 
-import { NAV_LINKS } from "@/contants/navigation";
+import { NAV_LINKS } from "@/constants/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 

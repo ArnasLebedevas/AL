@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../../ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import Link from "next/link";
-import { ROUTES } from "@/contants/app-routes";
-import { NAV_LINKS } from "@/contants/navigation";
+import { ROUTES } from "@/constants/app-routes";
+import { NAV_LINKS } from "@/constants/navigation";
 
 export default function MobileNav() {
   const pathname = usePathname();
