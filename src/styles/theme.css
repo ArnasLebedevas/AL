@@ -19,6 +19,9 @@
   --primary: #1c1c22;
   --accent: #00ff99;
   --accent-hover: #00ff99d0;
+
+  --scrollbar-thumb: rgba(255, 255, 255, 0.4);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.2);
 }
 
 @layer base {
