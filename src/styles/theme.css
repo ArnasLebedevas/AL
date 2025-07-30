@@ -12,11 +12,13 @@
   --color-accent: var(--accent);
   --color-primary: var(--primary);
   --text-primary: var(--primary);
+  --color-accent-hover: var(--accent-hover);
 }
 
 :root {
   --primary: #1c1c22;
   --accent: #00ff99;
+  --accent-hover: #00ff99d0;
 }
 
 @layer base {
@@ -35,8 +37,4 @@
   h3 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
-}
-
-.container {
-  max-width: 1350px;
 }

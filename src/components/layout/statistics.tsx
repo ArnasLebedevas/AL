@@ -1,10 +1,10 @@
 "use client";
 
-import { Experience } from "@/constants/experience";
+import { Statistic } from "@/constants/experience";
 import CountUp from "react-countup";
 
 interface Props {
-  data: Experience[];
+  data: Statistic[];
 }
 
 export default function Statistics({ data }: Props) {
@@ -17,7 +17,6 @@ export default function Statistics({ data }: Props) {
               <CountUp
                 end={stat.value}
                 duration={5}
-                delay={2}
                 className="text-4xl xl:text-6xl font-extrabold"
               />
               <p

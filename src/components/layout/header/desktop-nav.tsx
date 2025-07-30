@@ -14,8 +14,9 @@ export default function DesktopNav() {
           key={link.path}
           href={link.path}
           className={`${
-            link.path === pathname && "text-accent border-b-2 border-accent"
-          } capitalize font-medium hover:text-accent`}
+            link.path === pathname &&
+            "text-accent border-b-2 border-accent duration-0"
+          } capitalize font-medium hover:text-accent transition-all`}
         >
           {link.name}
         </Link>

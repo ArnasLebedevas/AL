@@ -5,6 +5,11 @@
       "name": "Arnas Lebedevas"
     },
     "subtitle": "Software Developer",
-    "description": "I'm a software developer with a passion for creating innovative solutions."
+    "description": "I'm a software developer with a passion for creating innovative solutions.",
+    "talkButton": "Let's talk"
+  },
+  "technologies": {
+    "title": "Skills & Technologies",
+    "subtitle": "I work with a modern, proven tech stack to build reliable, responsive, and beautiful applications for web and mobile"
   }
 }

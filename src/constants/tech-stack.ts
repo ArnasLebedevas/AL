@@ -1,5 +1,6 @@
 "use client";
 
+import { VscAzure } from "react-icons/vsc";
 import { IconType } from "react-icons";
 import {
   SiDotnet,
@@ -11,6 +12,7 @@ import {
   SiFlutter,
   SiFigma,
   SiTypescript,
+  SiAngular,
   SiTailwindcss,
 } from "react-icons/si";
 
@@ -27,7 +29,9 @@ export const TECH_STACK: TechStack[] = [
   { icon: SiUmbraco, name: "Umbraco" },
   { icon: SiReact, name: "React" },
   { icon: SiFlutter, name: "Flutter" },
+  { icon: VscAzure, name: "Azure" },
   { icon: SiFigma, name: "Figma" },
+  { icon: SiAngular, name: "Angular" },
   { icon: SiTypescript, name: "TypeScript" },
   { icon: SiTailwindcss, name: "Tailwind CSS" },
 ];

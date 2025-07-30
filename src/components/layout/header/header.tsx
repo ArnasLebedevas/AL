@@ -10,9 +10,9 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center">
         <Link
           href={ROUTES.HOME}
-          className="text-6xl font-semibold flex items-center gap-2"
+          className="text-5xl font-semibold flex items-center gap-2"
         >
-          <span>AL</span>
+          <span>AL<span className="text-accent">.</span></span>
         </Link>
         <div className="hidden xl:flex items-center gap-8">
           <DesktopNav />

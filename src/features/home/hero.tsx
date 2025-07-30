@@ -1,38 +1,46 @@
 import ProfileImage from "@/components/layout/profile-image";
-import { Button } from "@/components/ui/button";
-import { IoMdDownload } from "react-icons/io";
-import SocialLinks from "./social-links";
+import PersonalSocials from "./personal-socials";
 import { content } from "@/constants/content";
+import TalkButton from "@/components/ui/talk-button";
+import AnimationGroup from "@/components/animations/animation-group";
+import FadeInUp from "@/components/animations/fade-in-up";
 
 export default function Hero() {
   const hero = content.home.hero;
 
   return (
     <div className="container mx-auto h-full">
-      <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-        <div className="text-center xl:text-left order-2 xl:order-none">
-          <div className="mb-4">{hero.subtitle}</div>
-          <h1 className="mb-4">
-            {hero.title.greeting} <br />
-            <span className="text-accent">{hero.title.name}</span>
-          </h1>
-          <p className="max-w-[500px] text-white/80 mb-7">{hero.description}</p>
-          <div className="flex flex-col xl:flex-row items-center gap-5">
-            <Button
-              variant="outline"
-              size="lg"
-              className="uppercase flex items-center gap-2"
-            >
-              <span>Download CV</span>
-              <IoMdDownload className="text-xl" />
-            </Button>
-            <SocialLinks />
+      <AnimationGroup>
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+          <div className="text-center xl:text-left order-2 xl:order-none">
+            <FadeInUp delay={0}>
+              <div className="mb-4">{hero.subtitle}</div>
+            </FadeInUp>
+            <FadeInUp delay={0.1}>
+              <h1 className="mb-4">
+                {hero.title.greeting} <br />
+                <span className="text-accent">{hero.title.name}</span>
+              </h1>
+            </FadeInUp>
+            <FadeInUp delay={0.2}>
+              <p className="max-w-[500px] text-white/80 mb-7">
+                {hero.description}
+              </p>
+            </FadeInUp>
+            <FadeInUp delay={0.3}>
+              <div className="flex flex-col xl:flex-row items-center gap-5">
+                <TalkButton label={hero.talkButton} />
+                <PersonalSocials />
+              </div>
+            </FadeInUp>
           </div>
+          <FadeInUp delay={0.4}>
+            <div className="order-1 xl:order-none mb-8 xl:mb-0">
+              <ProfileImage />
+            </div>
+          </FadeInUp>
         </div>
-        <div className="order-1 xl:order-none mb-8 xl:mb-0">
-          <ProfileImage />
-        </div>
-      </div>
+      </AnimationGroup>
     </div>
   );
 }

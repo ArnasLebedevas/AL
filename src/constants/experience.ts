@@ -1,11 +1,8 @@
-export interface Experience {
+import { content } from "./content";
+
+export interface Statistic {
   label: string;
   value: number;
 }
 
-export const EXPERIENCES: Experience[] = [
-  { label: "Years of experience", value: 5 },
-  { label: "Projects completed", value: 6 },
-  { label: "Technologies mastered", value: 10 },
-  { label: "Commits made", value: 500 },
-];
+export const EXPERIENCES: Statistic[] = content.experience;
