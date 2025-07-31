@@ -3,6 +3,7 @@ import { Button } from "../../ui/button";
 import { ROUTES } from "@/constants/app-routes";
 import DesktopNav from "./desktop-nav";
 import MobileNav from "./mobile-nav";
+import { env } from "@/lib/env";
 
 export default function Header() {
   return (
@@ -12,11 +13,13 @@ export default function Header() {
           href={ROUTES.HOME}
           className="text-5xl font-semibold flex items-center gap-2"
         >
-          <span>AL<span className="text-accent">.</span></span>
+          <span>
+            AL<span className="text-accent">.</span>
+          </span>
         </Link>
         <div className="hidden xl:flex items-center gap-8">
           <DesktopNav />
-          <Link href={ROUTES.CONTACT}>
+          <Link href={`mailto:${env.contactEmail}`}>
             <Button>Contact me</Button>
           </Link>
         </div>
