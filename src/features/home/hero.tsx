@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div className="container mx-auto h-full">
       <AnimationGroup>
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:mt-8 xl:mb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <FadeInUp delay={0}>
               <div className="mb-4">{hero.subtitle}</div>

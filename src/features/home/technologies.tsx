@@ -6,14 +6,16 @@ export default function Technologies() {
   const technologies = content.home.technologies;
 
   return (
-    <div className="xl:pb-24">
+    <div className="container mx-auto">
       <h2 className="text-accent text-center w-full mx-auto mb-4">
         {technologies.title}
       </h2>
-      <p className="text-center w-full mx-auto xl:mb-15 text-white/80">
+      <p className="text-center w-full mx-auto xl:mb-15 mb-7 text-white/80">
         {technologies.subtitle}
       </p>
-      <InfiniteCarousel data={TECH_STACK} />
+      <div className="mb-8">
+        <InfiniteCarousel data={TECH_STACK} />
+      </div>
     </div>
   );
 }
