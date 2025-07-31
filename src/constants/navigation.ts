@@ -1,4 +1,4 @@
-import { ROUTES } from "./app-routes";
+import { content } from "./content";
 
 interface NavLink {
   path: string;
@@ -6,6 +6,5 @@ interface NavLink {
 }
 
 export const NAV_LINKS: NavLink[] = [
-  { path: ROUTES.HOME, name: "Home" },
-  { path: ROUTES.ABOUT, name: "About" },
+  { path: content.navigation.home.path, name: content.navigation.home.name },
 ];

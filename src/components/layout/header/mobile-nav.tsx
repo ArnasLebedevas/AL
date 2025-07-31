@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../../ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import Link from "next/link";
-import { ROUTES } from "@/constants/app-routes";
 import { NAV_LINKS } from "@/constants/navigation";
+import Logo from "../logo";
 
 export default function MobileNav() {
   const pathname = usePathname();
@@ -18,9 +18,7 @@ export default function MobileNav() {
       <SheetContent className="flex flex-col">
         <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
         <div className="mt-32 mb-40 text-center text-2xl">
-          <Link href={ROUTES.HOME}>
-            <h1 className="text-4xl font-semibold">AL</h1>
-          </Link>
+          <Logo />
         </div>
         <nav className="flex flex-col justify-center items-center gap-8">
           {NAV_LINKS.map((link) => (
