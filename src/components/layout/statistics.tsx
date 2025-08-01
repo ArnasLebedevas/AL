@@ -15,11 +15,11 @@ export default function Statistics({ data }: Props) {
           {data.map((stat, index) => (
             <div
               key={index}
-              className="flex flex-col md:flex-row items-center md:items-start sm:w-auto w-[30%] xl:items-center"
+              className="flex flex-col md:flex-row items-center md:items-start sm:w-auto w-[40%] xl:items-center"
             >
               <CountUp
                 end={stat.value}
-                duration={2}
+                duration={4}
                 suffix={stat.suffix}
                 className="text-4xl xl:text-6xl font-extrabold text-white"
               />
