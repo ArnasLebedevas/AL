@@ -6,6 +6,7 @@ import { CiMenuFries } from "react-icons/ci";
 import Link from "next/link";
 import { NAV_LINKS } from "@/constants/navigation";
 import Logo from "../logo";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 export default function MobileNav() {
   const pathname = usePathname();
@@ -16,7 +17,9 @@ export default function MobileNav() {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <SheetTitle className="sr-only">Mobile Navigation</SheetTitle>
+        <SheetTitle>
+          <VisuallyHidden>Mobile Navigation</VisuallyHidden>
+        </SheetTitle>
         <div className="mt-32 mb-40 text-center text-2xl">
           <Logo />
         </div>
