@@ -10,20 +10,20 @@ interface Props {
 export default function Statistics({ data }: Props) {
   return (
     <section>
-      <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 mx-auto xl:max-w-none justify-between">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap justify-center sm:justify-between gap-6 text-center md:text-left">
           {data.map((stat, index) => (
             <div
-              className="flex gap-4 items-center text-left "
               key={index}
+              className="flex flex-col md:flex-row items-center md:items-start sm:w-auto w-[30%] xl:items-center"
             >
               <CountUp
                 end={stat.value}
-                duration={5}
+                duration={2}
                 suffix={stat.suffix}
-                className="text-4xl xl:text-6xl font-extrabold"
+                className="text-4xl xl:text-6xl font-extrabold text-white"
               />
-              <p className={` leading-snug text-white/80 w-min`}>
+              <p className="mt-2 md:mt-0 md:ml-3 text-sm text-white/80 leading-snug max-w-[100px]">
                 {stat.label}
               </p>
             </div>

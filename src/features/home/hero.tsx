@@ -1,7 +1,7 @@
 import ProfileImage from "@/components/layout/profile-image";
 import PersonalSocials from "./personal-socials";
 import { content } from "@/constants/content";
-import TalkButton from "@/components/ui/talk-button";
+import ContactButton from "@/components/ui/contact-button";
 import AnimationGroup from "@/components/animations/animation-group";
 import FadeInUp from "@/components/animations/fade-in-up";
 
@@ -29,7 +29,7 @@ export default function Hero() {
             </FadeInUp>
             <FadeInUp delay={0.3}>
               <div className="flex flex-col xl:flex-row items-center gap-5">
-                <TalkButton label={hero.talkButton} />
+                <ContactButton label={hero.contactButton} />
                 <PersonalSocials />
               </div>
             </FadeInUp>

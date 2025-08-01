@@ -7,13 +7,13 @@ export default function Technologies() {
 
   return (
     <div className="container mx-auto">
-      <h2 className="text-accent text-center w-full mx-auto mb-4">
+      <h2 className="text-accent text-center w-full mx-auto mb-5">
         {technologies.title}
       </h2>
-      <p className="text-center w-full mx-auto xl:mb-15 mb-7 text-white/80">
+      <p className="text-center w-full mx-auto mb-10 text-white/80">
         {technologies.subtitle}
       </p>
-      <div className="mb-8">
+      <div className="mb-10">
         <InfiniteCarousel data={TECH_STACK} />
       </div>
     </div>
