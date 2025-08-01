@@ -2,7 +2,7 @@ import ProfileImage from "@/components/layout/profile-image";
 import PersonalSocials from "./personal-socials";
 import { content } from "@/constants/content";
 import ContactButton from "@/components/ui/contact-button";
-import AnimationGroup from "@/components/animations/animation-group";
+import RevealAnimationGroup from "@/components/animations/reveal-animation-group";
 import FadeInUp from "@/components/animations/fade-in-up";
 
 export default function Hero() {
@@ -10,7 +10,7 @@ export default function Hero() {
 
   return (
     <div className="container mx-auto h-full">
-      <AnimationGroup>
+      <RevealAnimationGroup>
         <div className="flex flex-col xl:flex-row items-center justify-between xl:mt-8 xl:mb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <FadeInUp delay={0}>
@@ -40,7 +40,7 @@ export default function Hero() {
             </div>
           </FadeInUp>
         </div>
-      </AnimationGroup>
+      </RevealAnimationGroup>
     </div>
   );
 }

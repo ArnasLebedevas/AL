@@ -14,7 +14,11 @@ const fontJetBrains = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "AL",
-  description: "Portfolio of AL – showcasing projects, skills, and experience in web development and design.",
+  description:
+    "Portfolio of AL – showcasing projects, skills, and experience in web development and design.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

@@ -9,7 +9,7 @@ interface Props {
   staggerChildren?: number;
 }
 
-export default function AnimationGroup({
+export default function RevealAnimationGroup({
   children,
   delayChildren = 0.2,
   staggerChildren = 0.2,

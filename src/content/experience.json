@@ -1,6 +1,6 @@
 [
-  { "label": "Years of Experience", "value": 5, "suffix": "+" },
-  { "label": "Projects Delivered", "value": 5  },
-  { "label": "Collaborative Projects", "value": 13  },
-  { "label": "Tech Stack Proficiency", "value": 20 }
+  { "label": "Years of Experience", "value": 5 },
+  { "label": "Delivered Projects", "value": 3  },
+  { "label": "Collaborative Projects", "value": 15  },
+  { "label": "Tools & Technologies", "value": 20 }
 ]
