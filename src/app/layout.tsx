@@ -5,6 +5,7 @@ import "../styles/scrollbar.css";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import Main from "./main";
+import { Analytics } from "@vercel/analytics/next";
 
 const fontJetBrains = JetBrains_Mono({
   variable: "--font-jetbrains",
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={fontJetBrains.variable}>
         <Main>{children}</Main>
+        <Analytics />
       </body>
     </html>
   );
