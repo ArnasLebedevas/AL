@@ -10,7 +10,7 @@ export default function Header() {
   return (
     <header className="py-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center">
-        <Logo />
+        <Logo className="w-11 h-11 xl:w-15 xl:h-15" />
         <div className="hidden xl:flex items-center gap-8">
           <DesktopNav />
           <Link href={`mailto:${env.contactEmail}`}>

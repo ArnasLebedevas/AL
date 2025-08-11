@@ -1,6 +1,4 @@
-import "../styles/globals.css";
-import "../styles/theme.css";
-import "../styles/scrollbar.css";
+import "../styles/index.css";
 
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
@@ -14,9 +12,9 @@ const fontJetBrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AL",
+  title: "Arnas Lebedevas",
   description:
-    "Portfolio of AL – showcasing projects, skills, and experience in web development and design.",
+    "Arnas Lebedevas – showcasing expertise in software development, innovative projects, and technical skills.",
   icons: {
     icon: "/favicon.svg",
   },

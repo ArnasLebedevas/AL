@@ -16,12 +16,12 @@ export default function MobileNav() {
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className="flex flex-col">
+      <SheetContent aria-describedby={undefined} className="flex flex-col">
         <SheetTitle>
           <VisuallyHidden>Mobile Navigation</VisuallyHidden>
         </SheetTitle>
         <div className="mt-32 mb-40 text-center text-2xl">
-          <Logo />
+          <Logo className="w-16 h-16" />
         </div>
         <nav className="flex flex-col justify-center items-center gap-8">
           {NAV_LINKS.map((link) => (

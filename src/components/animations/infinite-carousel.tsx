@@ -23,7 +23,7 @@ export default function InfiniteCarousel({ data }: Props) {
             className="flex flex-col items-center justify-center flex-shrink-0 w-20 xl:w-30 mx-4 text-5xl xl:text-6xl"
           >
             <tech.icon />
-            <span className="mt-2 text-sm text-center">{tech.name}</span>
+            <span className="mt-2 text-sm text-center text-white/80">{tech.name}</span>
           </div>
         ))}
       </motion.div>

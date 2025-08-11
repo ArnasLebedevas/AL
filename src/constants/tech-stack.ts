@@ -14,6 +14,7 @@ import {
   SiTypescript,
   SiAngular,
   SiTailwindcss,
+  SiDocker,
 } from "react-icons/si";
 
 export interface TechStack {
@@ -34,4 +35,5 @@ export const TECH_STACK: TechStack[] = [
   { icon: SiAngular, name: "Angular" },
   { icon: SiTypescript, name: "TypeScript" },
   { icon: SiTailwindcss, name: "Tailwind" },
+  { icon: SiDocker, name: "Docker" },
 ];
