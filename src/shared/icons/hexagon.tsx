@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const HEXAGON_POINTS = "50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5";
+const HEXAGON_POINTS = "50,5 10,27.5 10,72.5 50,95 90,72.5 90,27.5";
 const DEFAULT_STROKE_LENGTH = 300;
 const DEFAULT_STROKE_WIDTH = 2;
 
@@ -32,7 +32,7 @@ export function Hexagon({
         fill={fill}
         initial={{
           strokeDasharray: DEFAULT_STROKE_LENGTH,
-          strokeDashoffset: -DEFAULT_STROKE_LENGTH,
+          strokeDashoffset: DEFAULT_STROKE_LENGTH,
         }}
         animate={{ strokeDashoffset: 0 }}
         transition={{ duration: animationDuration, ease: "easeInOut" }}
