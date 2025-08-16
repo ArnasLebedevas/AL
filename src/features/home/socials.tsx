@@ -1,4 +1,4 @@
-import { Social } from "@/constants/socials";
+import { Social } from "@/shared/constants/socials";
 import Link from "next/link";
 
 interface Props {

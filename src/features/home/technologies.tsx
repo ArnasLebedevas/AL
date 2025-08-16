@@ -1,6 +1,6 @@
-import InfiniteCarousel from "@/components/animations/infinite-carousel";
-import { content } from "@/constants/content";
-import { TECH_STACK } from "@/constants/tech-stack";
+import InfiniteCarousel from "@/features/animations/components/infinite-carousel";
+import { content } from "@/shared/constants/content";
+import { TECH_STACK } from "@/shared/constants/tech-stack";
 
 export default function Technologies() {
   const technologies = content.home.technologies;

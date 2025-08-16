@@ -1,6 +1,6 @@
 "use client";
 
-import { Statistic } from "@/constants/experience";
+import { Statistic } from "@/shared/constants/experience";
 import CountUp from "react-countup";
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 
 export default function Statistics({ data }: Props) {
   return (
-    <section>
+    <section className="xl:mb-24 mb-15">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-center sm:justify-between gap-6 text-center md:text-left">
           {data.map((stat, index) => (
