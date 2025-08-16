@@ -17,11 +17,11 @@ export default function HexagonLoader({ children }: Props) {
       <AnimatePresence mode="wait">
         {isAnimating && (
           <motion.div
-            className="flex items-center justify-center h-screen w-screen bg-[var(--primary)]"
+            className="flex items-center justify-center h-screen w-screen overflow-hidden bg-[var(--primary)] fixed top-0 left-0"
             {...hexagonMotionConfig}
           >
             <Logo
-              className="h-20 w-20 xl:h-25 xl:w-25"
+              className="h-16 w-16 xl:h-20 xl:w-20"
               animated
               onAnimationComplete={() => setIsAnimating(false)}
             />
