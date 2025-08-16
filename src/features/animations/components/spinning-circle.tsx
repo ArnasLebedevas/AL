@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { spinningStroke } from "./config/spin";
+import { spinningStroke } from "../config/spin";
 
 export default function SpinningCircle() {
   return (

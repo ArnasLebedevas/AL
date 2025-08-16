@@ -1,12 +1,12 @@
 "use client";
 
+import { IconType } from "react-icons";
 import React from "react";
 import { motion } from "framer-motion";
-import { TechStack } from "@/constants/tech-stack";
-import { infiniteScroll } from "./config/scroll";
+import { infiniteScroll } from "../config/scroll";
 
 interface Props {
-  data: TechStack[];
+  data: { icon: IconType; name: string }[];
 }
 
 export default function InfiniteCarousel({ data }: Props) {
@@ -23,7 +23,9 @@ export default function InfiniteCarousel({ data }: Props) {
             className="flex flex-col items-center justify-center flex-shrink-0 w-20 xl:w-30 mx-4 text-5xl xl:text-6xl"
           >
             <tech.icon />
-            <span className="mt-2 text-sm text-center text-white/80">{tech.name}</span>
+            <span className="mt-2 text-sm text-center text-white/80">
+              {tech.name}
+            </span>
           </div>
         ))}
       </motion.div>

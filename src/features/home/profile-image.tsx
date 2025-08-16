@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import SpinningCircle from "../animations/spinning-circle";
+import SpinningCircle from "../animations/components/spinning-circle";
 
 export default function ProfileImage() {
   return (
@@ -12,6 +12,7 @@ export default function ProfileImage() {
           priority
           fill
           alt="Profile"
+          sizes="(min-width: 1200px) 498px, 289px"
           className="object-contain rounded-full"
         />
       </div>

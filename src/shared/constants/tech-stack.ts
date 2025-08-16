@@ -24,7 +24,7 @@ export interface TechStack {
 
 export const TECH_STACK: TechStack[] = [
   { icon: SiDotnet, name: "Dotnet" },
-  { icon: SiApollographql, name: "Apollo" },
+  { icon: SiApollographql, name: "GraphQL" },
   { icon: SiNextdotjs, name: "Next.js" },
   { icon: SiPostgresql, name: "PostgreSQL" },
   { icon: SiUmbraco, name: "Umbraco" },

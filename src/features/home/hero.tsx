@@ -1,8 +1,9 @@
-import ProfileImage from "@/components/layout/profile-image";
-import PersonalSocials from "./personal-socials";
-import { content } from "@/constants/content";
-import ContactButton from "@/components/ui/contact-button";
-import FadeInUp from "@/components/animations/fade-in-up";
+import ProfileImage from "@/features/home/profile-image";
+import { content } from "@/shared/constants/content";
+import ContactButton from "@/shared/components/ui/contact-button";
+import FadeInUp from "@/features/animations/components/fade-in-up";
+import { PERSONAL_SOCIALS } from "@/shared/constants/socials";
+import Socials from "@/features/home/socials";
 
 export default function Hero() {
   const hero = content.home.hero;
@@ -28,7 +29,9 @@ export default function Hero() {
           <FadeInUp delay={0.3}>
             <div className="flex flex-col xl:flex-row items-center gap-5">
               <ContactButton label={hero.contactButton} />
-              <PersonalSocials />
+              <div className="mb-15 xl:mb-0">
+                <Socials data={PERSONAL_SOCIALS} />
+              </div>
             </div>
           </FadeInUp>
         </div>

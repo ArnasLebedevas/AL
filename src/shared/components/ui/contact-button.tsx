@@ -1,5 +1,5 @@
 import { FaEnvelope } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/shared/components/ui/button";
 import { env } from "@/lib/env";
 import Link from "next/link";
 
