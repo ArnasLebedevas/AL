@@ -21,7 +21,7 @@ export function Hexagon({
   stroke = "var(--accent)",
   strokeWidth = DEFAULT_STROKE_WIDTH,
   fill = "transparent",
-  animationDuration = 3,
+  animationDuration = 1.5,
 }: Props) {
   if (animated) {
     return (
