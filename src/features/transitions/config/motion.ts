@@ -1,6 +1,8 @@
 import { MotionProps } from "framer-motion";
 
 export const hexagonMotionConfig: MotionProps = {
-  exit: { opacity: 0 },
-  transition: { duration: 0.3 },
+  initial: { opacity: 1, scale: 1 },
+  animate: { opacity: 1, scale: 1 },
+  exit: { opacity: 0, scale: 0.2 },
+  transition: { duration: 0.2, ease: "easeIn" },
 };
