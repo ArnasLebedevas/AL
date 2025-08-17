@@ -1,9 +1,17 @@
 @import "tailwindcss";
-@import "tw-animate-css";
+
+:root {
+  --primary: #1c1c22;
+  --accent: #00ff99;
+  --accent-hover: #00ff99d0;
+
+  --scrollbar-thumb: #ffffff66;
+  --scrollbar-thumb-hover: #ffffff33;
+}
 
 @theme inline {
   --font-primary: var(--font-jetbrains);
-  
+
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 960px;
@@ -13,15 +21,6 @@
   --color-primary: var(--primary);
   --text-primary: var(--primary);
   --color-accent-hover: var(--accent-hover);
-}
-
-:root {
-  --primary: #1c1c22;
-  --accent: #00ff99;
-  --accent-hover: #00ff99d0;
-
-  --scrollbar-thumb: #ffffff66;
-  --scrollbar-thumb-hover: #ffffff33;
 }
 
 @layer base {
