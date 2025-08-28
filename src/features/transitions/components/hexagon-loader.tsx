@@ -10,29 +10,26 @@ interface Props {
 }
 
 export default function HexagonLoader({ children }: Props) {
-  const [isAnimating, setIsAnimating] = useState(true);
-  const [hasLoaderExited, setHasLoaderExited] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
 
   return (
     <div className="relative">
-      <AnimatePresence
-        mode="wait"
-        onExitComplete={() => setHasLoaderExited(true)}
-      >
-        {isAnimating && (
+      <AnimatePresence mode="wait" onExitComplete={() => setShowContent(true)}>
+        {isLoading && (
           <motion.div
-            className="flex items-center justify-center h-screen w-screen overflow-hidden bg-[var(--primary)] fixed top-0 left-0"
+            className="flex items-center justify-center h-screen w-screen overflow-hidden bg-[var(--primary)] fixed top-0 left-0 z-10"
             {...hexagonMotionConfig}
           >
             <Logo
               animated
-              onAnimationComplete={() => setIsAnimating(false)}
+              onAnimationComplete={() => setIsLoading(false)}
               className="h-16 w-16 xl:h-20 xl:w-20"
             />
           </motion.div>
         )}
       </AnimatePresence>
-      {hasLoaderExited && children}
+      {showContent && children}
     </div>
   );
 }
