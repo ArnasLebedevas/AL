@@ -1,10 +1,12 @@
 import { content } from "./content";
 
 interface NavLink {
-  path: string;
+  id: string;
   name: string;
+  number: string;
 }
 
 export const NAV_LINKS: NavLink[] = [
-  { path: content.navigation.home.path, name: content.navigation.home.name },
+  { ...content.navigation.about },
+  { ...content.navigation.contact },
 ];

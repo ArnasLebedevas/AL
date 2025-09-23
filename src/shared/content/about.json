@@ -1,0 +1,16 @@
+{
+  "title": "About Me",
+  "description": [
+    "My name is **Arnas Lebedevas**, and I’m passionate about designing and building reliable software solutions. Over the years, I’ve focused on creating applications that are **scalable**, **maintainable**, and built with **clean architecture**, thoughtful decisions, and attention to detail. I believe good software should be functional, easy to extend, and built to last.",
+    "Today, I work as a **Full Stack Developer at Solutionlab Production**, while also contributing at **Qubic**. My background in **consulting** and diverse project environments has given me the chance to solve complex challenges and deliver impactful solutions.",
+    "Here are a few technologies I’ve been working with recently:"
+  ],
+  "technologies": [
+    "C# .NET",
+    "React",
+    "TypeScript",
+    "Next.js",
+    "Flutter",
+    "Azure"
+  ]
+}
