@@ -1,7 +1,16 @@
 {
   "home": {
-    "name": "Home",
     "path": "/"
   },
-  "contact": "Contact me"
+  "about": {
+    "id": "about",
+    "name": "About",
+    "number": "01."
+  },
+  "contact": {
+    "id": "contact",
+    "name": "Contact",
+    "number": "02."
+  },
+  "resume": "Resume"
 }

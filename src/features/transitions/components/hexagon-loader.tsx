@@ -14,7 +14,7 @@ export default function HexagonLoader({ children }: Props) {
   const [showContent, setShowContent] = useState(false);
 
   return (
-    <div className="relative">
+    <>
       <AnimatePresence mode="wait" onExitComplete={() => setShowContent(true)}>
         {isLoading && (
           <motion.div
@@ -30,6 +30,6 @@ export default function HexagonLoader({ children }: Props) {
         )}
       </AnimatePresence>
       {showContent && children}
-    </div>
+    </>
   );
 }
