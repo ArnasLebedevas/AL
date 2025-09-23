@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import Main from "./main";
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const fontJetBrains = JetBrains_Mono({
   variable: "--font-jetbrains",
@@ -15,7 +15,7 @@ const fontJetBrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Arnas Lebedevas",
   description:
-    "Arnas Lebedevas – showcasing expertise in software development, innovative projects, and technical skills.",
+    "Passionate software developer focused on building scalable, efficient systems with clean code and modern best practices.",
   icons: {
     icon: "/favicon.svg",
   },
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-10">
       <body className={fontJetBrains.variable}>
         <Main>{children}</Main>
         <Analytics />

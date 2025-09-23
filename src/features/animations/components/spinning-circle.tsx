@@ -6,7 +6,7 @@ import { spinningStroke } from "../config/spin";
 export default function SpinningCircle() {
   return (
     <motion.svg
-      className="w-[290px] h-[300px] xl:w-[500px] xl:h-[509px]"
+      className="w-[290px] h-[300px] xl:w-[450px] xl:h-[459px]"
       fill="transparent"
       viewBox="0 0 506 506"
       xmlns="http://www.w3.org/2000/svg"

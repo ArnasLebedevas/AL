@@ -5,29 +5,36 @@ import {
   SheetContent,
   SheetTitle,
   SheetTrigger,
-} from "../../shared/components/ui/sheet";
+} from "../../../shared/components/ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
-import BrandLogo from "../../shared/components/brand/brand-logo";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { NavLinks } from "./nav-links";
+import { content } from "@/shared/constants/content";
+import ResumeButton from "./resume-button";
+import { useState } from "react";
 
 export default function MobileNav() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <Sheet>
+    <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger className="flex justify-center items-center">
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent aria-describedby={undefined} className="flex flex-col">
+      <SheetContent
+        aria-describedby={undefined}
+        onOpenAutoFocus={(event) => event.preventDefault()}
+        className="flex flex-col justify-center items-center"
+      >
         <SheetTitle>
           <VisuallyHidden>Mobile Navigation</VisuallyHidden>
         </SheetTitle>
-        <div className="mt-32 mb-40 text-center text-2xl">
-          <BrandLogo className="w-16 h-16" />
-        </div>
         <NavLinks
-          className="flex-col items-center gap-8"
+          className="flex-col items-center gap-5"
           linkClassName="text-xl"
+          onClick={() => setOpen(false)}
         />
+        <ResumeButton label={content.navigation.resume} />
       </SheetContent>
     </Sheet>
   );
