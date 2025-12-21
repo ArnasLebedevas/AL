@@ -1,6 +1,35 @@
-[
-  { "label": "Years of Experience", "value": 5 },
-  { "label": "Delivered Projects", "value": 3  },
-  { "label": "Collaborative Projects", "value": 15  },
-  { "label": "Tools & Technologies", "value": 20 }
-]
+{
+  "title": "Where I’ve Worked",
+  "items": [
+    {
+      "company": "SolutionLab",
+      "role": "Full Stack Developer",
+      "period": "Oct 2021 - Present",
+      "highlights": [
+        "Designed, developed, and refactored large scale monolithic and microservices based systems for enterprise clients including Cocomore, Inchcape, PPG and others.",
+        "Collaborated directly with clients to gather requirements, clarify technical constraints, and provide regular delivery updates.",
+        "Implemented new features, optimized existing functionality, and improved system performance, scalability, and maintainability."
+      ]
+    },
+    {
+      "company": "Qubic",
+      "role": "Qubican Developer",
+      "period": "Oct 2024 - Oct 2025",
+      "highlights": [
+        "Tested and validated npm packages, smart contracts, and transaction workflows, providing detailed feedback to the core development team.",
+        "Contributed to ecosystem growth by creating technical and educational content for the public community.",
+        "Identified and documented bugs, inconsistencies, and usability issues to support stable releases."
+      ]
+    },
+    {
+      "company": "Lobasoft",
+      "role": "Junior .NET Developer",
+      "period": "Sep 2020 - Aug 2021",
+      "highlights": [
+        "Contributed to the development and maintenance of large internal ERP and HRM systems using .NET technologies",
+        "Refactored legacy codebases to enhance performance, readability, and long term maintainability",
+        "Implemented new features and enhancements based on business and operational requirements"
+      ]
+    }
+  ]
+}

@@ -1,8 +1,6 @@
-import { content } from "./content";
-
-export interface Statistic {
-  label: string;
-  value: number;
+export interface ExperienceItem {
+  company: string;
+  role: string;
+  period: string;
+  highlights: string[];
 }
-
-export const EXPERIENCES: Statistic[] = content.experience;

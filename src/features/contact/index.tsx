@@ -1,30 +1,24 @@
 import ContactButton from "@/shared/components/contact-button";
-import Container from "@/shared/components/container";
+import { Section } from "@/shared/layout/section";
 import { SectionHeader } from "@/shared/components/section-header";
 import { content } from "@/shared/constants/content";
 
 export default function ContactSection() {
+  const { id, number } = content.navigation.contact;
+  const { title, subtitle, description, button } = content.contact;
+
   return (
-    <section id={content.navigation.contact.id}>
-      <Container
-        size="sm"
-        className="text-center justify-center flex flex-col items-center xl:py-[100px] py-[50px]"
-      >
-        <SectionHeader
-          number={content.navigation.contact.number}
-          title={content.contact.title}
-          hasDivider={false}
-          className="text-accent text-sm mb-7"
-          align="center"
-        />
-        <p className="text-white mb-5 xl:text-3xl text-2xl font-bold">
-          {content.contact.subtitle}
-        </p>
-        <p className="text-white/80 mb-7 text-xs xl:text-sm leading-[1.7]">
-          {content.contact.description}
-        </p>
-        <ContactButton label={content.contact.button} size="default" />
-      </Container>
-    </section>
+    <Section id={id} size="xs" align="center">
+      <SectionHeader
+        number={number}
+        title={title}
+        hasDivider={false}
+        className="text-accent text-sm"
+        align="center"
+      />
+      <span className="heading-md mb-5">{subtitle}</span>
+      <p className="body-md mb-7">{description}</p>
+      <ContactButton label={button} size="default" />
+    </Section>
   );
 }

@@ -1,6 +1,6 @@
 export const scrollToSection = (id: string) => {
   const element = document.getElementById(id);
-  
+
   scrollElementIntoView(element);
   updateUrlHash(id);
 };
