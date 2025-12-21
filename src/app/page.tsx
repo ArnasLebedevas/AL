@@ -1,12 +1,14 @@
 import AboutSection from "@/features/about";
 import ContactSection from "@/features/contact";
-import IntroSection from "@/features/intro";
+import ExperienceSection from "@/features/experience";
+import HeroSection from "@/features/intro";
 
 export default function Home() {
   return (
     <>
-      <IntroSection />
+      <HeroSection />
       <AboutSection />
+      <ExperienceSection />
       <ContactSection />
     </>
   );

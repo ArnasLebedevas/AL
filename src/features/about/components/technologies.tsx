@@ -1,15 +1,14 @@
-import { content } from "@/shared/constants/content";
+import { TechnologyItem } from "./technology-item";
 
-export function Technologies() {
+interface Props {
+  technologies: string[];
+}
+
+export function Technologies({ technologies }: Props) {
   return (
-    <ul className="mt-6 flex flex-wrap gap-y-2 text-xs xl:text-sm text-white/80">
-      {content.about.technologies.map((tech) => (
-        <li
-          key={tech}
-          className="flex basis-1/2 items-center gap-2 before:content-['▹'] before:text-accent before:text-lg"
-        >
-          {tech}
-        </li>
+    <ul className="mt-6 flex flex-wrap gap-y-2">
+      {technologies.map((tech) => (
+        <TechnologyItem key={tech} name={tech} />
       ))}
     </ul>
   );

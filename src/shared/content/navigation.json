@@ -7,10 +7,15 @@
     "name": "About",
     "number": "01."
   },
+  "experience": {
+    "id": "experience",
+    "name": "Experience",
+    "number": "02."
+  },
   "contact": {
     "id": "contact",
     "name": "Contact",
-    "number": "02."
+    "number": "03."
   },
   "resume": "Resume"
 }

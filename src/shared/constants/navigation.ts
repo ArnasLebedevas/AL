@@ -8,5 +8,6 @@ interface NavLink {
 
 export const NAV_LINKS: NavLink[] = [
   { ...content.navigation.about },
+  { ...content.navigation.experience },
   { ...content.navigation.contact },
 ];

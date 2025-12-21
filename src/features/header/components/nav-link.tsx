@@ -9,7 +9,13 @@ interface Props {
   onClick?: () => void;
 }
 
-export default function NavLink({ id, name, number, className, onClick }: Props) {
+export default function NavLink({
+  id,
+  name,
+  number,
+  className,
+  onClick,
+}: Props) {
   return (
     <a
       href={`#${id}`}
