@@ -2,7 +2,6 @@
   --primary: #1c1c22;
   --accent: #64ffb9;
   --accent-hover: #00ff99d0;
-
   --scrollbar-thumb: #ffffff66;
   --scrollbar-thumb-hover: #ffffff33;
 
@@ -24,12 +23,13 @@
 }
 
 @layer base {
+  body,
   html {
-    @apply h-full;
+    @apply h-full bg-primary;
   }
 
   body {
-    @apply bg-primary font-primary text-white antialiased h-full overflow-x-hidden;
+    @apply font-primary text-white antialiased overflow-x-hidden;
   }
 
   h1,
@@ -112,5 +112,60 @@
   }
   .container-lg {
     @apply max-w-[1350px];
+  }
+.sheet-safe {
+  background-color: var(--safari-bottom-bg);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+  @keyframes sheet-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes sheet-out-right {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes overlay-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes overlay-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  [data-slot="sheet-content"][data-state="open"] {
+    animation: sheet-in-right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  [data-slot="sheet-content"][data-state="closed"] {
+    animation: sheet-out-right 0.3s ease-in;
+  }
+
+  [data-slot="sheet-overlay"][data-state="open"] {
+    animation: overlay-in 0.3s ease-out;
+  }
+
+  [data-slot="sheet-overlay"][data-state="closed"] {
+    animation: overlay-out 0.2s ease-in;
   }
 }

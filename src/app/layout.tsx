@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-10">
+    <html lang="en">
       <body className={fontJetBrains.variable}>
         <Main>{children}</Main>
         <Analytics />
