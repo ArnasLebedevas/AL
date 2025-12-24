@@ -6,25 +6,28 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../../../shared/components/ui/sheet";
-import { CiMenuFries } from "react-icons/ci";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { NavLinks } from "./nav-links";
 import { content } from "@/shared/constants/content";
 import ResumeButton from "./resume-button";
+import { MenuToggleIcon } from "./menu-toggle-icon";
 import { useState } from "react";
 
 export default function MobileNav() {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
+    <Sheet open={isOpen} onOpenChange={setOpen}>
+      <SheetTrigger
+        aria-label="Toggle Menu"
+        className="relative h-10 w-10 flex items-center justify-center outline-none"
+      >
+        <MenuToggleIcon isOpen={isOpen} />
       </SheetTrigger>
+
       <SheetContent
         aria-describedby={undefined}
-        onOpenAutoFocus={(event) => event.preventDefault()}
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col justify-center items-center gap-8"
       >
         <SheetTitle>
           <VisuallyHidden>Mobile Navigation</VisuallyHidden>
