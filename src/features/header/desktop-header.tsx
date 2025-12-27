@@ -5,17 +5,22 @@ import { content } from "@/shared/constants/content";
 import { HeaderBar } from "./components/header-bar";
 import { motion } from "framer-motion";
 import { headerMotion } from "../animations/config/motion";
+import clsx from "clsx";
 
 interface Props {
-  visible: boolean;
+  isVisible: boolean;
+  isScrolled: boolean;
 }
 
-export function DesktopHeader({ visible }: Props) {
+export function DesktopHeader({ isVisible, isScrolled }: Props) {
   return (
     <motion.header
       {...headerMotion}
-      animate={visible ? headerMotion.animate : headerMotion.exit}
-      className="fixed top-0 w-full z-40 backdrop-blur-sm bg-primary/10"
+      animate={isVisible ? headerMotion.animate : headerMotion.exit}
+      className={clsx(
+        "fixed top-0 w-full z-40 backdrop-blur-sm bg-primary/10 transition-shadow duration-300",
+        isScrolled && "shadow-header"
+      )}
     >
       <HeaderBar>
         <Logo className="logo-size" />

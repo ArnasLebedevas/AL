@@ -14,7 +14,7 @@ const fontJetBrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Arnas Lebedevas",
   description:
-    "Passionate software developer focused on building scalable, efficient systems with clean code and modern best practices.",
+    "Passionate software developer focused on building scalable, efficient applications with clean code and modern best practices.",
   icons: {
     icon: "/favicon.svg",
   },

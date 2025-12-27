@@ -4,8 +4,8 @@ import { ContainerSize } from "./types";
 
 interface Props {
   size: ContainerSize;
-  className?: string;
   children: ReactNode;
+  className?: string;
 }
 
 export default function Container({ size, className, children }: Props) {
