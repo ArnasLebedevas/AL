@@ -3,7 +3,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 const SCROLL_THRESHOLD = 5;
 const SCROLL_OFFSET = 10;
 
-export const useScrollDirection = () => {
+export const useHeaderVisibility = () => {
   const [isVisible, setIsVisible] = useState(true);
   const lastScrollY = useRef(0);
   const isTicking = useRef(false);

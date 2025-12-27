@@ -6,7 +6,7 @@ interface Props {
 
 export function Technologies({ technologies }: Props) {
   return (
-    <ul className="mt-6 flex flex-wrap gap-y-2">
+    <ul className="flex flex-wrap gap-y-2">
       {technologies.map((tech) => (
         <TechnologyItem key={tech} name={tech} />
       ))}

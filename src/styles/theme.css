@@ -90,6 +90,10 @@
     height: var(--header-height);
   }
 
+  .shadow-header {
+    box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.3);
+  }
+
   .logo-size {
     @apply w-11 h-11 md:w-12 md:h-12;
   }
@@ -113,10 +117,7 @@
   .container-lg {
     @apply max-w-[1350px];
   }
-.sheet-safe {
-  background-color: var(--safari-bottom-bg);
-  padding-bottom: env(safe-area-inset-bottom);
-}
+
   @keyframes sheet-in-right {
     from {
       transform: translateX(100%);
