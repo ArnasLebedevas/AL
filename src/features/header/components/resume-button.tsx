@@ -1,4 +1,4 @@
-import { Button } from "@/shared/components/ui/button";
+import { LinkButton } from "@/shared/components/link-button";
 
 interface Props {
   label: string;
@@ -6,13 +6,11 @@ interface Props {
 
 export default function ResumeButton({ label }: Props) {
   return (
-    <a
+    <LinkButton
       href="/resume.pdf"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="Open resume in a new tab"
-    >
-      <Button variant="outline">{label}</Button>
-    </a>
+      label={label}
+      external
+      download
+    />
   );
 }

@@ -1,10 +1,5 @@
 import { content } from "./content";
-
-interface NavLink {
-  id: string;
-  name: string;
-  number: string;
-}
+import { NavLink } from "@/shared/types";
 
 export const NAV_LINKS: NavLink[] = [
   { ...content.navigation.about },

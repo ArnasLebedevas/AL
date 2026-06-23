@@ -1,5 +1,4 @@
-import { Button } from "@/shared/components/ui/button";
-import Link from "next/link";
+import { LinkButton } from "@/shared/components/link-button";
 import { env } from "@/lib/env";
 
 interface Props {
@@ -9,14 +8,10 @@ interface Props {
 
 export default function ContactButton({ label, size }: Props) {
   return (
-    <Link href={`mailto:${env.contactEmail}`}>
-      <Button
-        variant="outline"
-        size={size}
-        className=" flex items-center gap-2"
-      >
-        <span>{label}</span>
-      </Button>
-    </Link>
+    <LinkButton
+      href={`mailto:${env.contactEmail}`}
+      label={label}
+      size={size}
+    />
   );
 }

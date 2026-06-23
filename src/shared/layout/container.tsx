@@ -1,6 +1,6 @@
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import { ReactNode } from "react";
-import { ContainerSize } from "./types";
+import { ContainerSize } from "@/shared/types";
 
 interface Props {
   size: ContainerSize;
@@ -10,7 +10,7 @@ interface Props {
 
 export default function Container({ size, className, children }: Props) {
   return (
-    <div className={clsx(`mx-auto w-full px-7 container-${size}`, className)}>
+    <div className={cn(`mx-auto w-full px-7 container-${size}`, className)}>
       {children}
     </div>
   );

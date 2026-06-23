@@ -2,6 +2,7 @@ import { content } from "@/shared/constants/content";
 import { AboutContent } from "./components/about-content";
 import { AboutProfileImage } from "./components/about-profile-image";
 import { Section } from "@/shared/layout/section";
+import FadeInUp from "@/features/animations/components/fade-in-up";
 
 export default function AboutSection() {
   const { id, number } = content.navigation.about;
@@ -15,7 +16,9 @@ export default function AboutSection() {
         description={description}
         technologies={technologies}
       />
-      <AboutProfileImage />
+      <FadeInUp delay={0.3}>
+        <AboutProfileImage />
+      </FadeInUp>
     </Section>
   );
 }

@@ -4,9 +4,10 @@ import MobileNav from "./components/mobile-nav";
 
 interface Props {
   isVisible: boolean;
+  activeSection: string;
 }
 
-export function MobileHeader({ isVisible }: Props) {
+export function MobileHeader({ isVisible, activeSection }: Props) {
   return (
     <motion.div
       {...headerMotion}
@@ -14,7 +15,7 @@ export function MobileHeader({ isVisible }: Props) {
       animate={isVisible ? headerMotion.animate : headerMotion.exit}
     >
       <div className="flex items-center justify-between px-4">
-        <MobileNav />
+        <MobileNav activeSection={activeSection} />
       </div>
     </motion.div>
   );

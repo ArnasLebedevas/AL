@@ -1,1 +1,1 @@
-export type ContainerSize = "xs" | "sm" | "md" | "lg" | 'xl';
+export type { ContainerSize } from "@/shared/types";

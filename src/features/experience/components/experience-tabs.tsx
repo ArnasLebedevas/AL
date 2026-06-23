@@ -7,7 +7,7 @@ import {
   TabsTrigger,
 } from "@/shared/components/ui/tabs";
 import { ExperienceItemView } from "./experience-item";
-import { ExperienceItem } from "@/shared/constants/experience";
+import { ExperienceItem } from "@/shared/types";
 
 interface Props {
   items: ExperienceItem[];

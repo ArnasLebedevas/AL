@@ -5,7 +5,7 @@ import {
   SheetContent,
   SheetTitle,
   SheetTrigger,
-} from "../../../shared/components/ui/sheet";
+} from "@/shared/components/ui/sheet";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { NavLinks } from "./nav-links";
 import { content } from "@/shared/constants/content";
@@ -13,7 +13,7 @@ import ResumeButton from "./resume-button";
 import { MenuToggleIcon } from "./menu-toggle-icon";
 import { useState } from "react";
 
-export default function MobileNav() {
+export default function MobileNav({ activeSection }: { activeSection: string }) {
   const [isOpen, setOpen] = useState(false);
 
   return (
@@ -35,6 +35,7 @@ export default function MobileNav() {
         <NavLinks
           className="flex-col items-center gap-5"
           linkClassName="text-xl"
+          activeSection={activeSection}
           onClick={() => setOpen(false)}
         />
         <ResumeButton label={content.navigation.resume} />

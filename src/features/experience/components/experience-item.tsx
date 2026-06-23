@@ -1,4 +1,5 @@
-import { ExperienceItem } from "@/shared/constants/experience";
+import { ExperienceItem } from "@/shared/types";
+import { MarkerListItem } from "@/shared/components/marker-list-item";
 
 interface Props {
   experience: ExperienceItem;
@@ -13,12 +14,9 @@ export function ExperienceItemView({ experience }: Props) {
       </p>
       <ul className="mt-6 gap-4 flex flex-col">
         {experience.highlights.map((item, index) => (
-          <li
-            key={index}
-            className="flex items-baseline gap-3 before:content-['▹'] before:text-accent before:text-lg"
-          >
-            <span className="body-md ">{item}</span>
-          </li>
+          <MarkerListItem key={index} className="gap-3">
+            <span className="body-md">{item}</span>
+          </MarkerListItem>
         ))}
       </ul>
     </>

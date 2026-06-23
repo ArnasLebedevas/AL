@@ -5,6 +5,7 @@ import navigation from "../content/navigation.json";
 import statistics from "../content/statistic.json";
 import about from "../content/about.json";
 import contact from "../content/contact.json";
+import notFound from "../content/not-found.json";
 
 export const content = {
   home,
@@ -14,4 +15,5 @@ export const content = {
   statistics,
   navigation,
   contact,
+  notFound,
 };

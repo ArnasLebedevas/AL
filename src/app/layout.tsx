@@ -18,6 +18,23 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  metadataBase: new URL("https://arnaslebedevas.vercel.app"),
+  openGraph: {
+    title: "Arnas Lebedevas",
+    description:
+      "Passionate software developer focused on building scalable, efficient applications with clean code and modern best practices.",
+    url: "https://arnaslebedevas.vercel.app",
+    siteName: "Arnas Lebedevas",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arnas Lebedevas",
+    description:
+      "Passionate software developer focused on building scalable, efficient applications with clean code and modern best practices.",
+    creator: "@trustmycode",
+  },
 };
 
 export default function RootLayout({
