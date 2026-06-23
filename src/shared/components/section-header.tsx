@@ -27,7 +27,7 @@ export function SectionHeader({
         {title}
       </h2>
       {hasDivider && align === "left" && (
-        <div className="flex-grow border-t border-accent/20" />
+        <div className="flex-grow h-px bg-gradient-to-r from-accent/30 to-transparent" />
       )}
     </div>
   );

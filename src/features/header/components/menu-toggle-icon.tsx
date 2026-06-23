@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import { CiMenuFries } from "react-icons/ci";
 import { FiX } from "react-icons/fi";
 
@@ -16,10 +16,10 @@ export function MenuToggleIcon({ isOpen }: Props) {
   return (
     <>
       <CiMenuFries
-        className={clsx(baseIconClasses, isOpen ? closedState : openState)}
+        className={cn(baseIconClasses, isOpen ? closedState : openState)}
       />
       <FiX
-        className={clsx(baseIconClasses, isOpen ? openState : closedState)}
+        className={cn(baseIconClasses, isOpen ? openState : closedState)}
       />
     </>
   );

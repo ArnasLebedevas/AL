@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { hexagonMotionConfig } from "../config/motion";
+import { useScrollToHash } from "../hooks/use-scroll-to-hash";
 import Logo from "@/shared/icons/logo";
 
 interface Props {
@@ -12,6 +13,8 @@ interface Props {
 export default function HexagonLoader({ children }: Props) {
   const [isLoading, setIsLoading] = useState(true);
   const [showContent, setShowContent] = useState(false);
+
+  useScrollToHash(showContent);
 
   return (
     <>

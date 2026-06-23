@@ -6,15 +6,21 @@ import { fadeInUp } from "../config/fade";
 
 interface Props {
   children: ReactNode;
-  delay: number;
+  delay?: number;
   duration?: number;
+  className?: string;
 }
 
 export default function FadeInUp({
   children,
-  delay,
-  duration = 1,
+  delay = 0,
+  duration = 0.6,
+  className,
 }: Props) {
   const animation = fadeInUp(delay, duration);
-  return <motion.div {...animation}>{children}</motion.div>;
+  return (
+    <motion.div {...animation} className={className}>
+      {children}
+    </motion.div>
+  );
 }

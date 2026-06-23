@@ -1,7 +1,7 @@
-import clsx from "clsx";
+import { cn } from "@/lib/utils";
 import Container from "./container";
 import { ReactNode } from "react";
-import { ContainerSize } from "./types";
+import { ContainerSize } from "@/shared/types";
 
 type SectionLayout = "stack" | "split";
 type SectionAlign = "start" | "center";
@@ -28,11 +28,11 @@ export function Section({
   return (
     <section
       id={id}
-      className={clsx("section-padding", variant === "hero" && "section-hero")}
+      className={cn("section-padding", variant === "hero" && "section-hero")}
     >
       <Container size={size}>
         <div
-          className={clsx(
+          className={cn(
             "section-inner",
             layout === "split" && "section-split",
             align === "center" && "section-center"
